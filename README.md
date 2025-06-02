@@ -87,3 +87,14 @@ ___기울임 굵게___ 입니다.
 | :--- | :---: | ---: |
 | `셀 1` 이리와라 | 셀2      | 셀 3 가라라라ㅏㄹ|
 | `셀 4` | 셀 5하하하하하하하핳 | 셀6 |
+
+
+# 원시 HTML
+
+마크다운에서 <u>밑줄</u>은 지원하지 않습니다.
+
+<img width="150" src="http://gstatic.com/webp/gallery/4.jpg" alt="Prunus" title="마크다운은 이미지의 크기를 지정할 수 없으므로, 크기 지정을 위해서는 <img> 태그를 사용해야 합니다.">
+
+![Prunus](http://www.gstatic.com/webp/gallery/4.jpg)
+
+
