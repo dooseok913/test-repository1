@@ -42,10 +42,14 @@ ___기울임 굵게___ 입니다.
 네이버 홈페이지 : <https://naver.com>
 
 
-# 이미지
+#  이미지
 ![대체 텍스트(Alternative Text)](https://picsum.photos/1000/400 "링크 설명(Title)")
 ![구글 검색 이미지](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaN_bmcFwn760GDHxq-BhhHXq-_ZjILSxNAg&s)
 ![이미지][참조1]
 
 [참조1]: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTojCEAtMJ9uxvouVGNbxMBrIsBCes0CUHcYg&s
 
+띄어 쓰기가 굉장히 중요
+
+# 누르면  링크로 이동하는 이미지
+[![이미지](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaN_bmcFwn760GDHxq-BhhHXq-_ZjILSxNAg&s)](www.naver.com)
