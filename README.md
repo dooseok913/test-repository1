@@ -52,4 +52,4 @@ ___기울임 굵게___ 입니다.
 띄어 쓰기가 굉장히 중요
 
 # 누르면  링크로 이동하는 이미지
-[![이미지](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaN_bmcFwn760GDHxq-BhhHXq-_ZjILSxNAg&s)](www.naver.com)
+[![이미지](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaN_bmcFwn760GDHxq-BhhHXq-_ZjILSxNAg&s)](https://www.naver.com)
