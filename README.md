@@ -42,5 +42,5 @@ ___기울임 굵게___ 입니다.
 네이버 홈페이지 : <https://naver.com>
 
 
-# 제목
-
+# 이미지
+![대체 텍스트(Alternative Text)](https://picsum.photos/1000/400 "링크 설명(Title)")
