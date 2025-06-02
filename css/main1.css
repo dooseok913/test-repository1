@@ -1,0 +1,173 @@
+body{ 
+    margin: 0;
+    
+}
+.head {
+    height: 120px;
+    background-color:rgb(246, 245, 240);
+    margin: 0;
+    padding: 0;
+}
+.left{
+
+}
+.right{
+
+}
+.middle{
+    width: 1100px;
+    height: 100%;
+    margin:0 auto;
+    /* background-color: orange; */
+    position: relative;
+    display: flex;
+}
+.logo {
+    
+    position: relative;
+    left: 0px;
+    width: 100px;
+    
+    /* background-color: blue; */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-picture {
+    width: 75px;
+    height: 75px;
+
+}
+
+.menu{
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    
+
+
+}
+.top-menu{
+    width: 1000px;
+    ;
+    background-color: aqua;
+   position: relative;;
+}
+.top-menu-wrap{
+    display: flex;
+    height: 10px;
+    position: absolute;
+    right: 0px;
+
+    
+}
+.top-menu-wrap-factor {
+    font-size: 13px;
+    margin: 20px 10px 0px;
+    color:rgb(107, 106, 103) ;
+}
+.top-menu-wrap-factor:nth-child(1) {        border-right: 1px dotted rgb(107, 106, 103)   ;}
+.top-menu-wrap-factor:nth-child(2) {        border-right: 1px dotted rgb(107, 106, 103)   ;}
+.top-menu-wrap-factor:nth-child(3) {        border-right: 1px dotted rgb(107, 106, 103)   ;}
+.top-menu-wrap-factor:nth-child(5) { 
+    border: 1px solid  rgb(107, 106, 103);
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(250, 249, 248);
+    margin-top: 13px;
+}     
+
+.top-menu-wrap-factor:nth-child(1):hover {color: black; cursor: pointer;}
+.top-menu-wrap-factor:nth-child(2):hover {color: black; cursor: pointer;}
+.top-menu-wrap-factor:nth-child(3):hover {color: black; cursor: pointer;}
+.top-menu-wrap-factor:nth-child(4):hover {color: black; cursor: pointer;}
+.top-menu-wrap-factor:nth-child(5):active {
+    width: 100px;
+    height: 30px;
+    border: 1px solid green;
+    justify-content: flex-end;
+   }
+
+.bottom-menu {
+    background-color: blueviolet;
+}
+.bottom-menu-wrap {
+    display: flex;
+    height: 60px;
+     position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 20px;
+}
+.bottom-menu-wrap-factor {
+    margin: 10px;
+}
+.bottom-menu-wrap-factor:nth-child(1):hover {color: green; background-color: black; border-radius: 10%;}
+.bottom-menu-wrap-factor:nth-child(2):hover {color: green; background-color: black; border-radius: 10%;}
+.bottom-menu-wrap-factor:nth-child(3):hover {color: green; background-color: black; border-radius: 10%;}
+.bottom-menu-wrap-factor:nth-child(4):hover {color: green; background-color: black; border-radius: 10%;}
+.bottom-menu-wrap-factor:nth-child(5):hover {color: green; background-color: black; border-radius: 10%;}
+.bottom-menu-wrap-factor:nth-child(6):hover {color: green; background-color: black; border-radius: 10%;}
+
+.bottom-menu-wrap-factor:nth-child(1){
+    padding: 10px;
+}
+.wrapper {
+        width: 100%vw;
+        height: 646px;
+        background-color: rgb(53, 53, 28);
+        margin: -10px;
+
+
+}
+.content1 {
+        width: 90%vw;
+        height: 646px;
+        background-color: yellow;
+        margin: 0;
+
+
+}
+.content1-left {
+
+    width: 470px;
+    height: 240px;
+    background-color:transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+.content1-left-button button{
+    width: 170px;
+    height: 50px;
+    color: rgb(89,43,24);
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    position: absolute;
+    top:250px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: transparent;
+    border-color: rgb(89,43,24);
+}
+.content1-middle {
+
+}
+.content1-right1{
+
+}
+.content1-right2{
+
+}
+
+
+

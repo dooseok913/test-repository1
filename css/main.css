@@ -1,0 +1,319 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+
+  /* height: 3000px; */
+  /* 강제로 스크롤 만들기 */
+}
+
+a {
+text-decoration: none;
+}
+
+img {
+    display: block;
+    /* 이미지 inline으로 되어 있음.  칸에 맞추기 위해서  block으로 변환. */
+}
+
+ 
+
+header {
+    position: fixed;
+    /*  스크롤을 내리더라도  header가 계속 없어지지 않고, 유지된다. */
+    width: 100%;
+    /* inner가 100%가 아니라서   fixed 하면 왼쪽으로 이동 그러니..width:100% 해야 */
+
+    background-color: #f6f5f0;
+    border-bottom: 1px solid #c8c8c8;
+
+}
+
+header > .inner {
+
+height: 120px;
+}
+/*  >를 해야 바로 밑에 inner 만 적용이 된다.
+안그러면 아래 리스트 밑으로 증가할 때 
+확장이 안됨.  */
+/*  .inner {
+width: 1100px;
+height: 120px;
+margin: 0 auto;
+
+position: relative;
+ 에서 변경*/
+
+.inner {
+width: 1100px;
+margin: 0 auto;
+position: relative;
+}
+ /*  .inner {
+width: 1100px;
+height: 120px;
+margin: 0 auto;
+position: relative;
+에서 갖고 옴. 대부분에 컨텐츠를 가운데로 갖고 오기 위해서 . 활용
+} */
+
+header .inner .logo {
+    height: 75px;
+    margin: auto 0;
+    /* height 알아야 margin에 auto가 된다. */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* display: none; */
+}
+
+
+
+header .inner .sub-menu {
+ display: flex;
+ position: absolute;
+ right: 0;
+ top: 10px;
+}
+
+header .inner .sub-menu ul.menu {
+    display: flex;
+}
+
+header .inner .sub-menu ul.menu li {
+    position: relative;
+}
+
+header .inner .sub-menu ul.menu li::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    display: block;
+    /* display block 해서 보이게 만듬 */
+    background-color:#e5e5e5;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+header .inner .sub-menu ul.menu li:first-child::before {
+    display: none;
+}
+
+header .inner .sub-menu ul.menu li a{
+    font-size: 13px;
+    padding: 11px 16px;
+    display: block;
+    color: #656565;
+    text-decoration: none;
+    /* a의 밑줄 없애기 위해서.  */
+}
+header .inner .sub-menu ul.menu li a:hover {
+    color: black;
+}
+
+header .inner .sub-menu .search {
+    /* background-color: red; */
+    height: 34px;
+    position: relative;
+}
+header .inner .sub-menu .search input {
+    width: 36px;
+    height: 34px;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: #777;
+    font-size: 12px;
+    transition: width .4s;
+}
+header .inner .sub-menu .search input:focus {
+    width: 190px;
+    border-color: #669900;
+
+}
+header .inner .sub-menu .search .material-icons {
+    height: 24px;
+    position: absolute;
+    /* inline인데   position absolute로 하면, block 이된다. */
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto 0;
+}
+
+
+header .main-menu {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+header .main-menu .item {
+
+    
+}
+
+
+header .main-menu .item .item__name {
+    padding: 10px 20px 34px 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .main-menu .item:hover .item__name {
+    /* item_name에 후버를 두지 않는 이유: 근처에 갖다 대기만 해도 
+    반응 하도록 하기 위해서.  그렇지 않으면 글자위에 가야 반응 */
+    background-color: #2c2e29;
+    color: #669900;
+    border-radius: 6px 6px 0 0;
+    /* 일부만 깍는 방법 */
+    cursor: pointer;
+}
+
+header .main-menu .item .item__contents {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    /*  position: fixed;
+    left: 0;   이 있어야  menu  texture 가 양 옆으로 펼쳐짐*/
+    display: none;
+    /* none을 해서 안 보이게 한 후,  hover를 사용해서 보이게 한다. */
+   
+}
+/* position: fixed의 특성
+의미: 요소를 뷰포트에 고정하여 스크롤과 관계없이 항상 같은 위치에 유지.
+부모 영향: 부모 요소의 크기, overflow, 또는 레이아웃 제약에 영향을 받지 않음.
+결과: 자식 요소가 부모보다 넓거나 밖으로 확장 가능. */
+
+header .main-menu .item:hover .item__contents {
+    display: block;
+    /* item을 후버시,  item__contents를 보여줌. */
+}
+/* display:none -> 렌더링 되지 않게 만듬.  
+display:block ->  렌더링 되게 만듬.  그래서 보임
+렌더링 : 시각적으로 보이게 표현하는 과정 */
+
+
+header .main-menu .item .item__contents .contents__menu{
+/* width: 100%; */
+/* height: 200px; */
+/* 메뉴가 늘어나는 경우 아래로 확장 되도록, heigt 조건을 없앰 */
+background-color: #2c2a29;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul {
+    display: flex;
+    padding: 20px 0 ;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li{
+    width: 220px;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul> li h4{
+    color: white;
+    font-size: 14px;
+    padding: 3px 0 12px 0;
+
+}
+header .main-menu .item .item__contents .contents__menu > ul> li ul{
+
+}
+header .main-menu .item .item__contents .contents__menu > ul> li ul li{
+    color: #999;
+    font-size: 12px;
+    padding: 5px    0;
+    cursor: pointer;
+
+}
+header .main-menu .item .item__contents .contents__texture{
+/* width: 100%; */
+/* height: 100px;   높이가 글자양에 맞춰서 늘어나도록  삭제 */
+font-size: 12px;
+padding: 26px;
+
+/* background-color: yellow; */
+ background-image: url("../images/main_menu_pattern.jpg");
+}
+/* ..   점을 2개 주어야 한다... */
+
+header .main-menu .item .item__contents .contents__texture h4{
+    color: #999;
+    font-weight: 700;
+}
+
+header .main-menu .item .item__contents .contents__texture p {
+    color: #690;
+    margin: 4px 0 14px;
+}
+
+
+
+
+header .badges {
+    /* badge를 스크롤 내려도 없어지게 하지 않기 위해서
+    header에 넣었다.
+
+     badge를 스크롤 내려도 없어지게 하지 않기 위해서
+     fixed를 사용하였다. 
+     */
+    position: fixed;
+    right: 12px;
+    top: 132px;
+    /* fixed 해서  inner 안 에 있지만, inner를 벗어난다. 뷰포트 기준 */
+
+}   
+
+
+
+header .badges .badge {
+    /* z-index  같은데, 밑에 온 태그가 우선으로, 위로 올라가니.
+    강제로 뒤로 보내기 위해서  main menu에  z-index 주자.*/
+
+    border-radius: 10px;    
+    overflow: hidden;
+    /* img src  ovrflow 해서  가장자리를 깍자 */
+
+    margin-bottom: 12px ;
+}
+
+/* section1 */
+.visual {
+    /* height: 500px; */
+    background-color: royalblue;
+}
+/* section2 */
+.notice {
+    /* height: 500px; */
+    background-color: orange;
+}
+/* section3 */
+.promotion {
+    /* height: 500px; */
+    background-color: red;
+}
+/* section4 */
+.rewards {
+    /* height: 500px; */
+    background-color: yellow;
+}
+/* section5 */
+.youtube {
+    /* height: 500px; */
+    background-color: green;
+}
+/* section6 */
+.season-product {
+    /* height: 500px; */
+    background-color: purple;
+}
