@@ -49,7 +49,9 @@ ___기울임 굵게___ 입니다.
 
 [참조1]: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTojCEAtMJ9uxvouVGNbxMBrIsBCes0CUHcYg&s
 
-띄어 쓰기가 굉장히 중요
+띄어 쓰기
+띄어 쓰기 안하는게
+굉장히 중요
 
 # 누르면  링크로 이동하는 이미지
 [![이미지](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaN_bmcFwn760GDHxq-BhhHXq-_ZjILSxNAg&s)](https://www.naver.com)
