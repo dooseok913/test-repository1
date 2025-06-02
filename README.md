@@ -76,3 +76,7 @@ ___기울임 굵게___ 입니다.
 ```` 언어이름
 내용
 ````
+
+```html
+<a href="https://www.google.co.kr/" target="_blank">GOOGLE</a>
+```
