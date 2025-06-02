@@ -60,3 +60,8 @@ ___기울임 굵게___ 입니다.
 # 이미지에 링크 추가
 //    +  를 눌러서    보여줄  이미지를 업로드 파일  선택해서 올린다.
   [![HEROPY.DEV](/favicon.png)](https://heropy.dev/)
+
+
+# 코드 강조
+
+`background` 혹은 `background-image` 속성으로 요소에 배경 이미지를 삽입할 수 있습니다.
