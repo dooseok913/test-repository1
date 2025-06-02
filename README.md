@@ -33,7 +33,7 @@ ___기울임 굵게___ 입니다.
 
 # 제목
 
-[구글로 이동] (htttps://www.google.com)
+[구글로 이동](htttps://www.google.com)
 
 [google](www.google.com)
 
