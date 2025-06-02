@@ -35,6 +35,8 @@ ___기울임 굵게___ 입니다.
 
 [구글로 이동] (htttps://www.google.com)
 
+[google](www.google.com)
+
 구글 홈페이지 : https://google.com
 네이버 홈페이지 : <https://naver.com>
 
